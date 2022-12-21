@@ -1,0 +1,88 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(9) & _f(34) & _f(35) & _f(36) & WellDefinedness_teleport.1,(_f(37) & _f(45) => _f(46));
+_f(1) & _f(2) & _f(9) & WellDefinedness_moveWest.1,(_f(28) & _f(45) => _f(46));
+_f(1) & _f(2) & _f(9) & WellDefinedness_moveSouth.1,(_f(22) & _f(45) => _f(46));
+_f(1) & _f(2) & _f(9) & WellDefinedness_moveEast.1,(_f(16) & _f(45) => _f(46));
+_f(1) & _f(2) & _f(9) & WellDefinedness_moveNorth.1,(_f(10) & _f(45) => _f(46));
+_f(1) & _f(2) & _f(9) & _f(42) & _f(43) & _f(44) & WellDefinedness_hasVisitedSquare.2,(_f(45) => _f(47));
+_f(1) & _f(2) & _f(9) & _f(42) & _f(43) & _f(44) & WellDefinedness_hasVisitedSquare.1,(_f(45) => _f(46));
+_f(1) & _f(2) & _f(9) & Operation_resetRobot.5,(_f(3) => _f(8));
+_f(1) & _f(2) & _f(9) & Operation_resetRobot.4,(_f(3) => _f(7));
+_f(1) & _f(2) & _f(9) & Operation_resetRobot.3,(_f(3) => _f(6));
+_f(1) & _f(2) & _f(9) & Operation_resetRobot.2,(_f(3) => _f(5));
+_f(1) & _f(2) & _f(9) & Operation_resetRobot.1,(_f(3) => _f(4));
+_f(1) & _f(2) & _f(9) & _f(34) & _f(35) & _f(36) & Operation_teleport.2,(_f(37) & _f(3) => _f(41));
+_f(1) & _f(2) & _f(9) & _f(34) & _f(35) & _f(36) & Operation_teleport.1,(_f(37) & _f(3) => _f(40));
+_f(1) & _f(2) & _f(9) & Operation_moveWest.3,(_f(28) & _f(3) => _f(33));
+_f(1) & _f(2) & _f(9) & Operation_moveWest.2,(_f(28) & _f(3) => _f(31));
+_f(1) & _f(2) & _f(9) & Operation_moveWest.1,(_f(28) & _f(3) => _f(32));
+_f(1) & _f(2) & _f(9) & Operation_moveSouth.3,(_f(22) & _f(3) => _f(27));
+_f(1) & _f(2) & _f(9) & Operation_moveSouth.2,(_f(22) & _f(3) => _f(25));
+_f(1) & _f(2) & _f(9) & Operation_moveSouth.1,(_f(22) & _f(3) => _f(26));
+_f(1) & _f(2) & _f(9) & Operation_moveEast.3,(_f(16) & _f(3) => _f(21));
+_f(1) & _f(2) & _f(9) & Operation_moveEast.2,(_f(16) & _f(3) => _f(19));
+_f(1) & _f(2) & _f(9) & Operation_moveEast.1,(_f(16) & _f(3) => _f(20));
+_f(1) & _f(2) & _f(9) & Operation_moveNorth.3,(_f(10) & _f(3) => _f(15));
+_f(1) & _f(2) & _f(9) & Operation_moveNorth.2,(_f(10) & _f(3) => _f(13));
+_f(1) & _f(2) & _f(9) & Operation_moveNorth.1,(_f(10) & _f(3) => _f(14));
+_f(1) & _f(2) & Initialisation.5,(_f(3) => _f(8));
+_f(1) & _f(2) & Initialisation.4,(_f(3) => _f(7));
+_f(1) & _f(2) & Initialisation.3,(_f(3) => _f(6));
+_f(1) & _f(2) & Initialisation.2,(_f(3) => _f(5));
+_f(1) & _f(2) & Initialisation.1,(_f(3) => _f(4))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+((1..4)*{DIRECTIONS}): FIN(NATURAL*{DIRECTIONS})& not(((1..4)*{DIRECTIONS}) = {}) & ((1..6)*{REPORT}): FIN(NATURAL*{REPORT})& not(((1..6)*{REPORT}) = {}) & mazeXSize : POW( (NAT-{0})) & ((mazeXSize) = (((1) .. (7)))) & mazeYSize : POW( (NAT-{0})) & ((mazeYSize) = (((1) .. (5)))) & ((fullMaze) = ((mazeXSize * mazeYSize))) & internalWalls : POW( fullMaze) & ((internalWalls) = (({((1) |-> (3))}\/{((2) |-> (1))}\/{((2) |-> (3))}\/{((2) |-> (5))}\/{((3) |-> (3))}\/{((4) |-> (2))}\/{((4) |-> (3))}\/{((4) |-> (4))}\/{((6) |-> (1))}\/{((6) |-> (2))}\/{((6) |-> (4))}\/{((7) |-> (4))}))) & emptyMazeSquares : POW( fullMaze) & ((((emptyMazeSquares) /\ (internalWalls))) = ({})) & ((((emptyMazeSquares) \/ (internalWalls))) = (fullMaze)) & ((entranceSquare) : (emptyMazeSquares)) & ((entranceSquare) = (((1) |-> (1)))) & ((exitSquare) = (((1) |-> (5)))) & ((exitSquare) : (emptyMazeSquares));
+"Invariant is preserved";
+((1) : (mazeXSize));
+((1) : (mazeYSize));
+(({}) : (seq(((1..4)*{DIRECTIONS}))));
+((entranceSquare) : (fullMaze));
+(([entranceSquare]) : (seq(emptyMazeSquares)));
+((robotX) : (mazeXSize)) & ((robotY) : (mazeYSize)) & ((movingDirection) : (((1..4)*{DIRECTIONS}))) & robotMovement : NATURAL-{0} +-> ((1..4)*{DIRECTIONS}) & ((robotMovement) : (seq(((1..4)*{DIRECTIONS})))) & ((currentCell) : (fullMaze)) & visitedCells : NATURAL-{0} +-> emptyMazeSquares & ((visitedCells) : (seq(emptyMazeSquares)));
+((((robotX) |-> ((robotY + 1)))) : (emptyMazeSquares));
+not(((((robotX) |-> ((robotY + 1)))) : (emptyMazeSquares)));
+not(((((robotX) |-> ((robotY + 1)))) : (fullMaze)));
+((((robotX) |-> ((robotY + 1)))) : (fullMaze));
+(((robotY + 1)) : (mazeYSize));
+((((visitedCells) <- (((robotX) |-> ((robotY + 1)))))) : (seq(emptyMazeSquares)));
+(((((robotX + 1)) |-> (robotY))) : (emptyMazeSquares));
+not((((((robotX + 1)) |-> (robotY))) : (emptyMazeSquares)));
+not((((((robotX + 1)) |-> (robotY))) : (fullMaze)));
+(((((robotX + 1)) |-> (robotY))) : (fullMaze));
+(((robotX + 1)) : (mazeXSize));
+((((visitedCells) <- ((((robotX + 1)) |-> (robotY))))) : (seq(emptyMazeSquares)));
+((((robotX) |-> ((robotY - 1)))) : (emptyMazeSquares));
+not(((((robotX) |-> ((robotY - 1)))) : (emptyMazeSquares)));
+not(((((robotX) |-> ((robotY - 1)))) : (fullMaze)));
+((((robotX) |-> ((robotY - 1)))) : (fullMaze));
+(((robotY - 1)) : (mazeYSize));
+((((visitedCells) <- (((robotX) |-> ((robotY - 1)))))) : (seq(emptyMazeSquares)));
+(((((robotX - 1)) |-> (robotY))) : (emptyMazeSquares));
+not((((((robotX - 1)) |-> (robotY))) : (emptyMazeSquares)));
+not((((((robotX - 1)) |-> (robotY))) : (fullMaze)));
+(((((robotX - 1)) |-> (robotY))) : (fullMaze));
+(((robotX - 1)) : (mazeXSize));
+((((visitedCells) <- ((((robotX - 1)) |-> (robotY))))) : (seq(emptyMazeSquares)));
+((message) : (((1..6)*{REPORT})));
+((newXPosition) : (mazeXSize));
+((newYPosition) : (mazeYSize));
+((((newXPosition) |-> (newYPosition))) : (emptyMazeSquares));
+not(((((newXPosition) |-> (newYPosition))) : (emptyMazeSquares)));
+not(((((newXPosition) |-> (newYPosition))) : (fullMaze)));
+((((newXPosition) |-> (newYPosition))) : (fullMaze));
+((((visitedCells) <- (((newXPosition) |-> (newYPosition))))) : (seq(emptyMazeSquares)));
+((visitedSquare) : (((1..6)*{REPORT})));
+((xPosition) = (robotX));
+((yPosition) = (robotY));
+"Operation is well defined";
+((visitedCells) : (seq(ran(visitedCells))));
+not(((visitedCells) = ({})))
+END
+&
+THEORY EnumerateX IS
+DIRECTIONS == {north,south,east,west};
+REPORT == {OPERATION_SUCCESSFUL,ERROR_internal_wall_detected,ERROR_maze_wall_detected,ERROR_attempt_to_move_out_of_maze,YES,NO}
+END
