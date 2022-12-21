@@ -1,0 +1,90 @@
+digraph history {
+graph [nodesep=1.5, ranksep=1.5];
+0 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="mazeXSize = \{1,2,3,4,5,6,7\},mazeYSize = \{1,2,3,4,5\},fullMaze = \{(1\|-\>1),(1\|-\>2),(1\|-\>3),(1\|-\>4),(1\|-\>5),(2\|-\>1),(2\|-\>2),(2\|-\>3),(2\|-\>4),(2\|-\>5),(3\|-\>1),(3\|-\>2),(3\|-\>3),(3\|-\>4),(3\|-\>5),(4\|-\>1),(4\|-\>2),(4\|-\>3),(4\|-\>4),(4\|-\>5),(5\|-\>1),(5\|-\>2),(5\|-\>3),(5\|-\>4),(5\|-\>5),(6\|-\>1),(6\|-\>2),(6\|-\>3),(6\|-\>4),(6\|-\>5),(7\|-\>1),(7\|-\>2),(7\|-\>3),(7\|-\>4),(7\|-\>5)\},\ninternalWalls = \{(1\|-\>3),(2\|-\>1),(2\|-\>3),(2\|-\>5),(3\|-\>3),(4\|-\>2),(4\|-\>3),(4\|-\>4),(6\|-\>1),(6\|-\>2),(6\|-\>4),(7\|-\>4)\},emptyMazeSquares = \{(1\|-\>1),(1\|-\>2),(1\|-\>4),(1\|-\>5),(2\|-\>2),(2\|-\>4),(3\|-\>1),(3\|-\>2),(3\|-\>4),(3\|-\>5),(4\|-\>1),(4\|-\>5),(5\|-\>1),(5\|-\>2),(5\|-\>3),(5\|-\>4),(5\|-\>5),(6\|-\>3),(6\|-\>5),(7\|-\>1),(7\|-\>2),(7\|-\>3),(7\|-\>5)\},entranceSquare = (1\|-\>1),\nexitSquare = (1\|-\>5)"];
+
+1 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="repeated (2)\nrobotX = 1,robotY = 1,visitedCells(1) = (1\|-\>1),\nrobotMovement = [],currentCell = (1\|-\>1),movingDirection = north"];
+
+2 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 1,robotY = 2,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),robotMovement = [],currentCell = (1\|-\>2),\nmovingDirection = north"];
+
+10 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 2,robotY = 2,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),robotMovement = [],\ncurrentCell = (2\|-\>2),movingDirection = east"];
+
+20 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 3,robotY = 2,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nrobotMovement = [],currentCell = (3\|-\>2),movingDirection = east"];
+
+30 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 2,robotY = 2,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),robotMovement = [],currentCell = (2\|-\>2),\nmovingDirection = west"];
+
+39 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 3,robotY = 2,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),robotMovement = [],\ncurrentCell = (3\|-\>2),movingDirection = east"];
+
+48 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 3,robotY = 1,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nrobotMovement = [],currentCell = (3\|-\>1),movingDirection = south"];
+
+59 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 4,robotY = 1,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),robotMovement = [],currentCell = (4\|-\>1),\nmovingDirection = east"];
+
+68 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 5,robotY = 1,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),robotMovement = [],\ncurrentCell = (5\|-\>1),movingDirection = east"];
+
+77 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 5,robotY = 2,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nrobotMovement = [],currentCell = (5\|-\>2),movingDirection = north"];
+
+87 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 5,robotY = 3,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),robotMovement = [],currentCell = (5\|-\>3),\nmovingDirection = north"];
+
+97 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 5,robotY = 4,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),robotMovement = [],\ncurrentCell = (5\|-\>4),movingDirection = north"];
+
+108 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 5,robotY = 5,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),visitedCells(13) = (5\|-\>5),\nrobotMovement = [],currentCell = (5\|-\>5),movingDirection = north"];
+
+120 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 4,robotY = 5,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),visitedCells(13) = (5\|-\>5),\nvisitedCells(14) = (4\|-\>5),robotMovement = [],currentCell = (4\|-\>5),\nmovingDirection = west"];
+
+130 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 3,robotY = 5,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),visitedCells(13) = (5\|-\>5),\nvisitedCells(14) = (4\|-\>5),visitedCells(15) = (3\|-\>5),robotMovement = [],\ncurrentCell = (3\|-\>5),movingDirection = west"];
+
+140 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 3,robotY = 4,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),visitedCells(13) = (5\|-\>5),\nvisitedCells(14) = (4\|-\>5),visitedCells(15) = (3\|-\>5),visitedCells(16) = (3\|-\>4),\nrobotMovement = [],currentCell = (3\|-\>4),movingDirection = south"];
+
+150 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 2,robotY = 4,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),visitedCells(13) = (5\|-\>5),\nvisitedCells(14) = (4\|-\>5),visitedCells(15) = (3\|-\>5),visitedCells(16) = (3\|-\>4),\nvisitedCells(17) = (2\|-\>4),robotMovement = [],currentCell = (2\|-\>4),\nmovingDirection = west"];
+
+160 [shape=box, color="#99BF38", fontsize=12, penwidth=2, label="robotX = 1,robotY = 4,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),visitedCells(13) = (5\|-\>5),\nvisitedCells(14) = (4\|-\>5),visitedCells(15) = (3\|-\>5),visitedCells(16) = (3\|-\>4),\nvisitedCells(17) = (2\|-\>4),visitedCells(18) = (1\|-\>4),robotMovement = [],\ncurrentCell = (1\|-\>4),movingDirection = west"];
+
+169 [shape=doubleoctagon, color="#99BF38", fontsize=12, penwidth=2, label="repeated (2)\nrobotX = 1,robotY = 5,visitedCells(1) = (1\|-\>1),\nvisitedCells(2) = (1\|-\>2),visitedCells(3) = (2\|-\>2),visitedCells(4) = (3\|-\>2),\nvisitedCells(5) = (2\|-\>2),visitedCells(6) = (3\|-\>2),visitedCells(7) = (3\|-\>1),\nvisitedCells(8) = (4\|-\>1),visitedCells(9) = (5\|-\>1),visitedCells(10) = (5\|-\>2),\nvisitedCells(11) = (5\|-\>3),visitedCells(12) = (5\|-\>4),visitedCells(13) = (5\|-\>5),\nvisitedCells(14) = (4\|-\>5),visitedCells(15) = (3\|-\>5),visitedCells(16) = (3\|-\>4),\nvisitedCells(17) = (2\|-\>4),visitedCells(18) = (1\|-\>4),visitedCells(19) = (1\|-\>5),\nrobotMovement = [],currentCell = (1\|-\>5),movingDirection = north"];
+
+root [shape=invtriangle, color="#99BF38", fontsize=12, penwidth=2, label="root"];
+
+root -> 0 [style = dotted, color = black, label="SETUP_CONSTANTS", fontsize=12];
+
+0 -> 1 [color = "#006391", label="INITIALISATION", fontsize=12];
+
+
+1 -> 2 [color = "#006391", label="moveNorth--\>OPERATION_SUCCESSFUL", fontsize=12];
+1 -> 2 [color = "#006391", label="teleport(1,2)--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+2 -> 10 [color = "#006391", label="moveEast--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+10 -> 20 [color = "#006391", label="moveEast--\>OPERATION_SUCCESSFUL", fontsize=12];
+10 -> 20 [color = "#006391", label="teleport(3,2)--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+20 -> 30 [color = "#006391", label="moveWest--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+30 -> 39 [color = "#006391", label="moveEast--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+39 -> 48 [color = "#006391", label="moveSouth--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+48 -> 59 [color = "#006391", label="moveEast--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+59 -> 68 [color = "#006391", label="moveEast--\>OPERATION_SUCCESSFUL", fontsize=12];
+59 -> 68 [color = "#006391", label="teleport(5,1)--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+68 -> 77 [color = "#006391", label="moveNorth--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+77 -> 87 [color = "#006391", label="moveNorth--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+87 -> 97 [color = "#006391", label="moveNorth--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+97 -> 108 [color = "#006391", label="moveNorth--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+108 -> 120 [color = "#006391", label="moveWest--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+120 -> 130 [color = "#006391", label="moveWest--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+130 -> 140 [color = "#006391", label="moveSouth--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+140 -> 150 [color = "#006391", label="moveWest--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+150 -> 160 [color = "#006391", label="moveWest--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+160 -> 169 [color = "#006391", label="moveNorth--\>OPERATION_SUCCESSFUL", fontsize=12];
+
+
+}
