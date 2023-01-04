@@ -13,7 +13,7 @@ THEORY LoadedStructureX IS
 END
 &
 THEORY ListSeesX IS
-  List_Sees(Machine(robot))==(?)
+  List_Sees(Machine(robot))==(maze)
 END
 &
 THEORY ListUsesX IS
@@ -85,7 +85,9 @@ THEORY ListParametersX IS
   List_Parameters(Machine(robot))==(?)
 END
 &
-THEORY ListInstanciatedParametersX END
+THEORY ListInstanciatedParametersX IS
+  List_Instanciated_Parameters(Machine(robot),Machine(maze))==(?)
+END
 &
 THEORY ListConstraintsX IS
   List_Context_Constraints(Machine(robot))==(btrue);
@@ -153,11 +155,11 @@ END
 &
 THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(robot),resetRobot)==(btrue | robotX,robotY,currentCell,visitedCells,robotMovement,message,movingDirection:=1,1,entranceSquare,[entranceSquare],<>,OPERATION_SUCCESSFUL,north);
-  Expanded_List_Substitution(Machine(robot),teleport)==(message: REPORT & newXPosition: mazeXSize & newYPosition: mazeYSize | newXPosition|->newYPosition: emptyMazeSquares ==> robotX,robotY,visitedCells,currentCell,message:=newXPosition,newYPosition,visitedCells<-(newXPosition|->newYPosition),newXPosition|->newYPosition,OPERATION_SUCCESSFUL [] not(newXPosition|->newYPosition: emptyMazeSquares) ==> (newXPosition|->newYPosition/:fullMaze ==> message:=ERROR_attempt_to_move_out_of_maze [] not(newXPosition|->newYPosition/:fullMaze) ==> message:=ERROR_internal_wall_detected));
-  Expanded_List_Substitution(Machine(robot),moveWest)==(btrue | robotX-1|->robotY: emptyMazeSquares ==> robotX,visitedCells,currentCell,message,movingDirection:=robotX-1,visitedCells<-(robotX-1,robotY),robotX-1|->robotY,OPERATION_SUCCESSFUL,west [] not(robotX-1|->robotY: emptyMazeSquares) ==> (robotX-1|->robotY/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX-1|->robotY/:fullMaze) ==> message:=ERROR_internal_wall_detected));
-  Expanded_List_Substitution(Machine(robot),moveSouth)==(btrue | robotX|->robotY-1: emptyMazeSquares ==> robotY,visitedCells,currentCell,message,movingDirection:=robotY-1,visitedCells<-(robotX|->robotY-1),robotX|->robotY-1,OPERATION_SUCCESSFUL,south [] not(robotX|->robotY-1: emptyMazeSquares) ==> (robotX|->robotY-1/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX|->robotY-1/:fullMaze) ==> message:=ERROR_internal_wall_detected));
-  Expanded_List_Substitution(Machine(robot),moveEast)==(btrue | robotX+1|->robotY: emptyMazeSquares ==> robotX,visitedCells,currentCell,message,movingDirection:=robotX+1,visitedCells<-(robotX+1,robotY),robotX+1|->robotY,OPERATION_SUCCESSFUL,east [] not(robotX+1|->robotY: emptyMazeSquares) ==> (robotX+1|->robotY/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX+1|->robotY/:fullMaze) ==> message:=ERROR_internal_wall_detected));
-  Expanded_List_Substitution(Machine(robot),moveNorth)==(btrue | robotX|->robotY+1: emptyMazeSquares ==> robotY,visitedCells,currentCell,message,movingDirection:=robotY+1,visitedCells<-(robotX|->robotY+1),robotX|->robotY+1,OPERATION_SUCCESSFUL,north [] not(robotX|->robotY+1: emptyMazeSquares) ==> (robotX|->robotY+1/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX|->robotY+1/:fullMaze) ==> message:=ERROR_internal_wall_detected));
+  Expanded_List_Substitution(Machine(robot),teleport)==(message: REPORT & newXPosition: mazeXSize & newYPosition: mazeYSize | robotX|->robotY = exitSquare ==> message:=FOUND_EXIT_prohibited_robot_movements [] not(robotX|->robotY = exitSquare) ==> (newXPosition|->newYPosition: emptyMazeSquares ==> robotX,robotY,visitedCells,currentCell,message:=newXPosition,newYPosition,visitedCells<-(newXPosition|->newYPosition),newXPosition|->newYPosition,OPERATION_SUCCESSFUL [] not(newXPosition|->newYPosition: emptyMazeSquares) ==> (newXPosition|->newYPosition/:fullMaze ==> message:=ERROR_attempt_to_move_out_of_maze [] not(newXPosition|->newYPosition/:fullMaze) ==> message:=ERROR_internal_wall_detected)));
+  Expanded_List_Substitution(Machine(robot),moveWest)==(btrue | robotX|->robotY = exitSquare ==> message:=FOUND_EXIT_prohibited_robot_movements [] not(robotX|->robotY = exitSquare) ==> (robotX-1|->robotY: emptyMazeSquares ==> robotX,visitedCells,currentCell,message,movingDirection:=robotX-1,visitedCells<-(robotX-1,robotY),robotX-1|->robotY,OPERATION_SUCCESSFUL,west [] not(robotX-1|->robotY: emptyMazeSquares) ==> (robotX-1|->robotY/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX-1|->robotY/:fullMaze) ==> message:=ERROR_internal_wall_detected)));
+  Expanded_List_Substitution(Machine(robot),moveSouth)==(btrue | robotX|->robotY = exitSquare ==> message:=FOUND_EXIT_prohibited_robot_movements [] not(robotX|->robotY = exitSquare) ==> (robotX|->robotY-1: emptyMazeSquares ==> robotY,visitedCells,currentCell,message,movingDirection:=robotY-1,visitedCells<-(robotX|->robotY-1),robotX|->robotY-1,OPERATION_SUCCESSFUL,south [] not(robotX|->robotY-1: emptyMazeSquares) ==> (robotX|->robotY-1/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX|->robotY-1/:fullMaze) ==> message:=ERROR_internal_wall_detected)));
+  Expanded_List_Substitution(Machine(robot),moveEast)==(btrue | robotX|->robotY = exitSquare ==> message:=FOUND_EXIT_prohibited_robot_movements [] not(robotX|->robotY = exitSquare) ==> (robotX+1|->robotY: emptyMazeSquares ==> robotX,visitedCells,currentCell,message,movingDirection:=robotX+1,visitedCells<-(robotX+1,robotY),robotX+1|->robotY,OPERATION_SUCCESSFUL,east [] not(robotX+1|->robotY: emptyMazeSquares) ==> (robotX+1|->robotY/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX+1|->robotY/:fullMaze) ==> message:=ERROR_internal_wall_detected)));
+  Expanded_List_Substitution(Machine(robot),moveNorth)==(btrue | robotX|->robotY = exitSquare ==> message:=FOUND_EXIT_prohibited_robot_movements [] not(robotX|->robotY = exitSquare) ==> (robotX|->robotY+1: emptyMazeSquares ==> robotY,visitedCells,currentCell,message,movingDirection:=robotY+1,visitedCells<-(robotX|->robotY+1),robotX|->robotY+1,OPERATION_SUCCESSFUL,north [] not(robotX|->robotY+1: emptyMazeSquares) ==> (robotX|->robotY+1/:fullMaze ==> message:=ERROR_maze_wall_detected [] not(robotX|->robotY+1/:fullMaze) ==> message:=ERROR_internal_wall_detected)));
   Expanded_List_Substitution(Machine(robot),robotsRoute)==(btrue | routeTaken:=visitedCells);
   Expanded_List_Substitution(Machine(robot),hasVisitedSquare)==(visitedSquare: REPORT & xPosition = robotX & yPosition = robotY | {xPosition|->yPosition} <: ran(front(visitedCells)) ==> visitedSquare:=YES [] not({xPosition|->yPosition} <: ran(front(visitedCells))) ==> visitedSquare:=NO);
   Expanded_List_Substitution(Machine(robot),getPosition)==(btrue | position:=currentCell);
@@ -166,18 +168,18 @@ THEORY ListSubstitutionX IS
   List_Substitution(Machine(robot),getPosition)==(position:=currentCell);
   List_Substitution(Machine(robot),hasVisitedSquare)==(IF {xPosition|->yPosition} <: ran(front(visitedCells)) THEN visitedSquare:=YES ELSE visitedSquare:=NO END);
   List_Substitution(Machine(robot),robotsRoute)==(routeTaken:=visitedCells);
-  List_Substitution(Machine(robot),moveNorth)==(IF robotX|->robotY+1: emptyMazeSquares THEN robotY:=robotY+1 || visitedCells:=visitedCells<-(robotX|->robotY+1) || currentCell:=robotX|->robotY+1 || message:=OPERATION_SUCCESSFUL || movingDirection:=north ELSE IF robotX|->robotY+1/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END);
-  List_Substitution(Machine(robot),moveEast)==(IF robotX+1|->robotY: emptyMazeSquares THEN robotX:=robotX+1 || visitedCells:=visitedCells<-(robotX+1,robotY) || currentCell:=robotX+1|->robotY || message:=OPERATION_SUCCESSFUL || movingDirection:=east ELSE IF robotX+1|->robotY/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END);
-  List_Substitution(Machine(robot),moveSouth)==(IF robotX|->robotY-1: emptyMazeSquares THEN robotY:=robotY-1 || visitedCells:=visitedCells<-(robotX|->robotY-1) || currentCell:=robotX|->robotY-1 || message:=OPERATION_SUCCESSFUL || movingDirection:=south ELSE IF robotX|->robotY-1/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END);
-  List_Substitution(Machine(robot),moveWest)==(IF robotX-1|->robotY: emptyMazeSquares THEN robotX:=robotX-1 || visitedCells:=visitedCells<-(robotX-1,robotY) || currentCell:=robotX-1|->robotY || message:=OPERATION_SUCCESSFUL || movingDirection:=west ELSE IF robotX-1|->robotY/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END);
-  List_Substitution(Machine(robot),teleport)==(IF newXPosition|->newYPosition: emptyMazeSquares THEN robotX:=newXPosition || robotY:=newYPosition || visitedCells:=visitedCells<-(newXPosition|->newYPosition) || currentCell:=newXPosition|->newYPosition || message:=OPERATION_SUCCESSFUL ELSE IF newXPosition|->newYPosition/:fullMaze THEN message:=ERROR_attempt_to_move_out_of_maze ELSE message:=ERROR_internal_wall_detected END END);
+  List_Substitution(Machine(robot),moveNorth)==(IF robotX|->robotY = exitSquare THEN message:=FOUND_EXIT_prohibited_robot_movements ELSE IF robotX|->robotY+1: emptyMazeSquares THEN robotY:=robotY+1 || visitedCells:=visitedCells<-(robotX|->robotY+1) || currentCell:=robotX|->robotY+1 || message:=OPERATION_SUCCESSFUL || movingDirection:=north ELSE IF robotX|->robotY+1/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END END);
+  List_Substitution(Machine(robot),moveEast)==(IF robotX|->robotY = exitSquare THEN message:=FOUND_EXIT_prohibited_robot_movements ELSE IF robotX+1|->robotY: emptyMazeSquares THEN robotX:=robotX+1 || visitedCells:=visitedCells<-(robotX+1,robotY) || currentCell:=robotX+1|->robotY || message:=OPERATION_SUCCESSFUL || movingDirection:=east ELSE IF robotX+1|->robotY/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END END);
+  List_Substitution(Machine(robot),moveSouth)==(IF robotX|->robotY = exitSquare THEN message:=FOUND_EXIT_prohibited_robot_movements ELSE IF robotX|->robotY-1: emptyMazeSquares THEN robotY:=robotY-1 || visitedCells:=visitedCells<-(robotX|->robotY-1) || currentCell:=robotX|->robotY-1 || message:=OPERATION_SUCCESSFUL || movingDirection:=south ELSE IF robotX|->robotY-1/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END END);
+  List_Substitution(Machine(robot),moveWest)==(IF robotX|->robotY = exitSquare THEN message:=FOUND_EXIT_prohibited_robot_movements ELSE IF robotX-1|->robotY: emptyMazeSquares THEN robotX:=robotX-1 || visitedCells:=visitedCells<-(robotX-1,robotY) || currentCell:=robotX-1|->robotY || message:=OPERATION_SUCCESSFUL || movingDirection:=west ELSE IF robotX-1|->robotY/:fullMaze THEN message:=ERROR_maze_wall_detected ELSE message:=ERROR_internal_wall_detected END END END);
+  List_Substitution(Machine(robot),teleport)==(IF robotX|->robotY = exitSquare THEN message:=FOUND_EXIT_prohibited_robot_movements ELSE IF newXPosition|->newYPosition: emptyMazeSquares THEN robotX:=newXPosition || robotY:=newYPosition || visitedCells:=visitedCells<-(newXPosition|->newYPosition) || currentCell:=newXPosition|->newYPosition || message:=OPERATION_SUCCESSFUL ELSE IF newXPosition|->newYPosition/:fullMaze THEN message:=ERROR_attempt_to_move_out_of_maze ELSE message:=ERROR_internal_wall_detected END END END);
   List_Substitution(Machine(robot),resetRobot)==(robotX:=1 || robotY:=1 || currentCell:=entranceSquare || visitedCells:=[entranceSquare] || robotMovement:=<> || message:=OPERATION_SUCCESSFUL || movingDirection:=north)
 END
 &
 THEORY ListConstantsX IS
-  List_Valuable_Constants(Machine(robot))==(mazeXSize,mazeYSize,fullMaze,internalWalls,emptyMazeSquares,entranceSquare,exitSquare);
+  List_Valuable_Constants(Machine(robot))==(?);
   Inherited_List_Constants(Machine(robot))==(?);
-  List_Constants(Machine(robot))==(mazeXSize,mazeYSize,fullMaze,internalWalls,emptyMazeSquares,entranceSquare,exitSquare)
+  List_Constants(Machine(robot))==(?)
 END
 &
 THEORY ListSetsX IS
@@ -192,7 +194,7 @@ THEORY ListSetsX IS
   List_Enumerated(Machine(robot))==(DIRECTIONS,REPORT);
   List_Defered(Machine(robot))==(?);
   List_Sets(Machine(robot))==(DIRECTIONS,REPORT);
-  Set_Definition(Machine(robot),REPORT)==({OPERATION_SUCCESSFUL,ERROR_internal_wall_detected,ERROR_maze_wall_detected,ERROR_attempt_to_move_out_of_maze,YES,NO})
+  Set_Definition(Machine(robot),REPORT)==({OPERATION_SUCCESSFUL,ERROR_internal_wall_detected,ERROR_maze_wall_detected,ERROR_attempt_to_move_out_of_maze,FOUND_EXIT_prohibited_robot_movements,YES,NO})
 END
 &
 THEORY ListHiddenConstantsX IS
@@ -204,12 +206,21 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(robot))==(btrue);
-  Context_List_Properties(Machine(robot))==(btrue);
+  Context_List_Properties(Machine(robot))==(mazeXSize <: NAT1 & mazeXSize = 1..7 & mazeYSize <: NAT1 & mazeYSize = 1..5 & fullMaze = mazeXSize*mazeYSize & internalWalls <: fullMaze & internalWalls = {1|->3,2|->1,2|->3,2|->5,3|->3,4|->2,4|->3,4|->4,6|->1,6|->2,6|->4,7|->4} & emptyMazeSquares <: fullMaze & emptyMazeSquares/\internalWalls = {} & emptyMazeSquares\/internalWalls = fullMaze & entranceSquare: emptyMazeSquares & entranceSquare = 1|->1 & exitSquare = 1|->5 & exitSquare: emptyMazeSquares);
   Inherited_List_Properties(Machine(robot))==(btrue);
-  List_Properties(Machine(robot))==(mazeXSize <: NAT1 & mazeXSize = 1..7 & mazeYSize <: NAT1 & mazeYSize = 1..5 & fullMaze = mazeXSize*mazeYSize & internalWalls <: fullMaze & internalWalls = {1|->3,2|->1,2|->3,2|->5,3|->3,4|->2,4|->3,4|->4,6|->1,6|->2,6|->4,7|->4} & emptyMazeSquares <: fullMaze & emptyMazeSquares/\internalWalls = {} & emptyMazeSquares\/internalWalls = fullMaze & entranceSquare: emptyMazeSquares & entranceSquare = 1|->1 & exitSquare = 1|->5 & exitSquare: emptyMazeSquares & DIRECTIONS: FIN(INTEGER) & not(DIRECTIONS = {}) & REPORT: FIN(INTEGER) & not(REPORT = {}))
+  List_Properties(Machine(robot))==(DIRECTIONS: FIN(INTEGER) & not(DIRECTIONS = {}) & REPORT: FIN(INTEGER) & not(REPORT = {}))
 END
 &
-THEORY ListSeenInfoX END
+THEORY ListSeenInfoX IS
+  Seen_Internal_List_Operations(Machine(robot),Machine(maze))==(?);
+  Seen_Context_List_Enumerated(Machine(robot))==(?);
+  Seen_Context_List_Invariant(Machine(robot))==(btrue);
+  Seen_Context_List_Assertions(Machine(robot))==(btrue);
+  Seen_Context_List_Properties(Machine(robot))==(btrue);
+  Seen_List_Constraints(Machine(robot))==(btrue);
+  Seen_List_Operations(Machine(robot),Machine(maze))==(?);
+  Seen_Expanded_List_Invariant(Machine(robot),Machine(maze))==(btrue)
+END
 &
 THEORY ListANYVarX IS
   List_ANY_Var(Machine(robot),foundExit)==(?);
@@ -225,19 +236,24 @@ THEORY ListANYVarX IS
 END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(robot)) == (mazeXSize,mazeYSize,fullMaze,internalWalls,emptyMazeSquares,entranceSquare,exitSquare,DIRECTIONS,REPORT,north,south,east,west,OPERATION_SUCCESSFUL,ERROR_internal_wall_detected,ERROR_maze_wall_detected,ERROR_attempt_to_move_out_of_maze,YES,NO | ? | movingDirection,currentCell,robotMovement,visitedCells,robotY,robotX | ? | foundExit,getPosition,hasVisitedSquare,robotsRoute,moveNorth,moveEast,moveSouth,moveWest,teleport,resetRobot | ? | ? | ? | robot);
+  List_Of_Ids(Machine(robot)) == (DIRECTIONS,REPORT,north,south,east,west,OPERATION_SUCCESSFUL,ERROR_internal_wall_detected,ERROR_maze_wall_detected,ERROR_attempt_to_move_out_of_maze,FOUND_EXIT_prohibited_robot_movements,YES,NO | ? | movingDirection,currentCell,robotMovement,visitedCells,robotY,robotX | ? | foundExit,getPosition,hasVisitedSquare,robotsRoute,moveNorth,moveEast,moveSouth,moveWest,teleport,resetRobot | ? | seen(Machine(maze)) | ? | robot);
   List_Of_HiddenCst_Ids(Machine(robot)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(robot)) == (mazeXSize,mazeYSize,fullMaze,internalWalls,emptyMazeSquares,entranceSquare,exitSquare);
+  List_Of_VisibleCst_Ids(Machine(robot)) == (?);
   List_Of_VisibleVar_Ids(Machine(robot)) == (? | ?);
-  List_Of_Ids_SeenBNU(Machine(robot)) == (?: ?)
+  List_Of_Ids_SeenBNU(Machine(robot)) == (?: ?);
+  List_Of_Ids(Machine(maze)) == (mazeXSize,mazeYSize,fullMaze,internalWalls,emptyMazeSquares,entranceSquare,exitSquare | ? | ? | ? | ? | ? | ? | ? | maze);
+  List_Of_HiddenCst_Ids(Machine(maze)) == (? | ?);
+  List_Of_VisibleCst_Ids(Machine(maze)) == (mazeXSize,mazeYSize,fullMaze,internalWalls,emptyMazeSquares,entranceSquare,exitSquare);
+  List_Of_VisibleVar_Ids(Machine(maze)) == (? | ?);
+  List_Of_Ids_SeenBNU(Machine(maze)) == (?: ?)
 END
 &
 THEORY SetsEnvX IS
-  Sets(Machine(robot)) == (Type(DIRECTIONS) == Cst(SetOf(etype(DIRECTIONS,0,3)));Type(REPORT) == Cst(SetOf(etype(REPORT,0,5))))
+  Sets(Machine(robot)) == (Type(DIRECTIONS) == Cst(SetOf(etype(DIRECTIONS,0,3)));Type(REPORT) == Cst(SetOf(etype(REPORT,0,6))))
 END
 &
 THEORY ConstantsEnvX IS
-  Constants(Machine(robot)) == (Type(north) == Cst(etype(DIRECTIONS,0,3));Type(south) == Cst(etype(DIRECTIONS,0,3));Type(east) == Cst(etype(DIRECTIONS,0,3));Type(west) == Cst(etype(DIRECTIONS,0,3));Type(OPERATION_SUCCESSFUL) == Cst(etype(REPORT,0,5));Type(ERROR_internal_wall_detected) == Cst(etype(REPORT,0,5));Type(ERROR_maze_wall_detected) == Cst(etype(REPORT,0,5));Type(ERROR_attempt_to_move_out_of_maze) == Cst(etype(REPORT,0,5));Type(YES) == Cst(etype(REPORT,0,5));Type(NO) == Cst(etype(REPORT,0,5));Type(mazeXSize) == Cst(SetOf(btype(INTEGER,"[mazeXSize","]mazeXSize")));Type(mazeYSize) == Cst(SetOf(btype(INTEGER,"[mazeYSize","]mazeYSize")));Type(fullMaze) == Cst(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?)));Type(internalWalls) == Cst(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?)));Type(emptyMazeSquares) == Cst(SetOf(btype(INTEGER,?,?)*btype(INTEGER,?,?)));Type(entranceSquare) == Cst(btype(INTEGER,?,?)*btype(INTEGER,?,?));Type(exitSquare) == Cst(btype(INTEGER,?,?)*btype(INTEGER,?,?)))
+  Constants(Machine(robot)) == (Type(north) == Cst(etype(DIRECTIONS,0,3));Type(south) == Cst(etype(DIRECTIONS,0,3));Type(east) == Cst(etype(DIRECTIONS,0,3));Type(west) == Cst(etype(DIRECTIONS,0,3));Type(OPERATION_SUCCESSFUL) == Cst(etype(REPORT,0,6));Type(ERROR_internal_wall_detected) == Cst(etype(REPORT,0,6));Type(ERROR_maze_wall_detected) == Cst(etype(REPORT,0,6));Type(ERROR_attempt_to_move_out_of_maze) == Cst(etype(REPORT,0,6));Type(FOUND_EXIT_prohibited_robot_movements) == Cst(etype(REPORT,0,6));Type(YES) == Cst(etype(REPORT,0,6));Type(NO) == Cst(etype(REPORT,0,6)))
 END
 &
 THEORY VariablesEnvX IS

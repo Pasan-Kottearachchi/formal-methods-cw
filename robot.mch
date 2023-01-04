@@ -4,53 +4,18 @@
  */
 MACHINE
     robot
+    
+SEES
+    maze
 
     SETS
         DIRECTIONS = {north, south, east, west};
-        REPORT = {OPERATION_SUCCESSFUL, ERROR_internal_wall_detected, ERROR_maze_wall_detected, ERROR_attempt_to_move_out_of_maze, YES, NO}
-
-    CONSTANTS
-        // Maze Constants
-        mazeXSize, mazeYSize, fullMaze, internalWalls, emptyMazeSquares, entranceSquare, exitSquare
-
-    PROPERTIES
-        mazeXSize <: NAT1 & 
-        mazeXSize = 1..7 &
-        mazeYSize <: NAT1 & 
-        mazeYSize = 1..5 &
-
-        // Maze Properties
-        // The full maze is made up by the Cartesian product of the mazeXSize and mazeYSize.
-        fullMaze = mazeXSize * mazeYSize &
-        
-        /*
-            These are blocks of walls which is placed in the grid in  order to make the grid a maze.
-            The coordinated of the internal walls should be belong to the coordinates of the full maze structure which is take as the fullMaze
-        */
-        internalWalls <: fullMaze &
-        internalWalls = {1|->3, 2|->1, 2|->3, 2|->5, 3|->3, 4|->2, 4|->3, 4|->4, 6|->1, 6|->2, 6|->4, 7|->4} &
-        
-         /* 
-             Empty maze squares are the squares through which a robot can move through a maze.
-             These should also belong to the coordinates of the full maze structure.
-         */
-        emptyMazeSquares <: fullMaze &
-        
-        // In the fullMaze there can't be any squares which is an empty square as well an an internal wall.
-        emptyMazeSquares /\ internalWalls = {} &
-        
-        // All squares should EITHER be EMPTY or OCCUPIED BY A WALL and the union of these 2 should be equal to the full maze structurew
-        emptyMazeSquares \/ internalWalls = fullMaze &
-
-        entranceSquare : emptyMazeSquares &
-        entranceSquare = 1|->1 &
-        
-        exitSquare = 1|->5 &
-        exitSquare : emptyMazeSquares
+        REPORT = {OPERATION_SUCCESSFUL, ERROR_internal_wall_detected, ERROR_maze_wall_detected, ERROR_attempt_to_move_out_of_maze, FOUND_EXIT_prohibited_robot_movements, YES, NO}
         
     DEFINITIONS
         isEmptyMazeSquare(x, y) == (x |-> y : emptyMazeSquares);
         isOutOfMaze(x, y) == (x |-> y /: fullMaze);
+        isRobotOnExit(x,y) == (x |-> y = exitSquare);
         /* ANIMATION_FUNCTION is the function that can be used to get ProB to draw a canvas to graphically animate the robot's movement through the maze
         * Reference: ProB's example of Queens on a chess board at <PROB_INSTALLATION_DIRECTORY>/Examples/GraphicalAnimation/NQueens.mch
         * ProB expects this function to be a definition of a set where each element is like row |-> column |-> animation_image_to_be_displayed
@@ -83,15 +48,14 @@ MACHINE
         ANIMATION_IMG2 == "images/sm_knight_white.gif";
    
     VARIABLES
-        robotX, robotY, visitedCells, robotMovement, currentCell, movingDirection
+        robotX, robotY, visitedCells, currentCell, movingDirection
     
     INVARIANT
         robotX : mazeXSize & robotY : mazeYSize & movingDirection : DIRECTIONS &
-        robotMovement : seq(DIRECTIONS) & currentCell : fullMaze & 
-        visitedCells : seq(emptyMazeSquares)
+        currentCell : fullMaze & visitedCells : seq(emptyMazeSquares)
     
     INITIALISATION
-        robotX := 1 || robotY :=1 || currentCell := (entranceSquare) || visitedCells := [entranceSquare] || robotMovement:=[] || movingDirection := north
+        robotX := 1 || robotY :=1 || currentCell := (entranceSquare) || visitedCells := [entranceSquare] || movingDirection := north
         
     OPERATIONS
         /* 
@@ -100,7 +64,7 @@ MACHINE
         */
         message <-- foundExit =
             BEGIN
-                IF (robotX |-> robotY = exitSquare)
+                IF isRobotOnExit(robotX, robotY)
                 THEN 
                     message := YES
                 ELSE
@@ -163,84 +127,104 @@ MACHINE
         */
         message <-- moveNorth =
         BEGIN
-            IF
-                isEmptyMazeSquare(robotX, robotY + 1)
+            IF isRobotOnExit(robotX, robotY)
             THEN
-                robotY :=  robotY + 1 ||
-                visitedCells := visitedCells <- (robotX |-> robotY + 1) ||
-                currentCell := (robotX |-> robotY + 1) ||
-                message := OPERATION_SUCCESSFUL || movingDirection := north
+                message:= FOUND_EXIT_prohibited_robot_movements
             ELSE
                 IF
-                    isOutOfMaze(robotX, robotY + 1)
+                    isEmptyMazeSquare(robotX, robotY + 1)
                 THEN
-                    message:= ERROR_maze_wall_detected
-                ELSE                
-                    message := ERROR_internal_wall_detected
-                END                
+                    robotY :=  robotY + 1 ||
+                    visitedCells := visitedCells <- (robotX |-> robotY + 1) ||
+                    currentCell := (robotX |-> robotY + 1) ||
+                    message := OPERATION_SUCCESSFUL || movingDirection := north
+                ELSE
+                    IF
+                        isOutOfMaze(robotX, robotY + 1)
+                    THEN
+                        message:= ERROR_maze_wall_detected
+                    ELSE                
+                        message := ERROR_internal_wall_detected
+                    END                
+                END
             END
         END;
         
         // This operation is used to move the robot 1 cell east(i.e left)
         message <-- moveEast =
         BEGIN
-            IF
-                isEmptyMazeSquare(robotX +1 , robotY)
+            IF isRobotOnExit(robotX, robotY)
             THEN
-                robotX :=  robotX + 1 ||
-                visitedCells := visitedCells <- (robotX +1 , robotY) ||
-                currentCell := (robotX +1 |-> robotY) ||
-                message := OPERATION_SUCCESSFUL || movingDirection := east
+                message:= FOUND_EXIT_prohibited_robot_movements
             ELSE
                 IF
-                    isOutOfMaze(robotX +1 , robotY)
+                    isEmptyMazeSquare(robotX +1 , robotY)
                 THEN
-                    message:= ERROR_maze_wall_detected
-                ELSE                
-                    message := ERROR_internal_wall_detected
-                END                
+                    robotX :=  robotX + 1 ||
+                    visitedCells := visitedCells <- (robotX +1 , robotY) ||
+                    currentCell := (robotX +1 |-> robotY) ||
+                    message := OPERATION_SUCCESSFUL || movingDirection := east
+                ELSE
+                    IF
+                        isOutOfMaze(robotX +1 , robotY)
+                    THEN
+                        message:= ERROR_maze_wall_detected
+                    ELSE                
+                        message := ERROR_internal_wall_detected
+                    END                
+                END
             END
         END;
         
         // This operation is used to move the robot 1 cell south(i.e downwards)
         message <-- moveSouth =
         BEGIN
-            IF
-                isEmptyMazeSquare(robotX, robotY - 1)
+            IF isRobotOnExit(robotX, robotY)
             THEN
-                robotY :=  robotY - 1 ||
-                visitedCells := visitedCells <- (robotX |-> robotY - 1) ||
-                currentCell := (robotX |-> robotY - 1) ||
-                message := OPERATION_SUCCESSFUL || movingDirection := south
+                message:= FOUND_EXIT_prohibited_robot_movements
             ELSE
                 IF
-                    isOutOfMaze(robotX, robotY - 1)
+                    isEmptyMazeSquare(robotX, robotY - 1)
                 THEN
-                    message:= ERROR_maze_wall_detected
-                ELSE                
-                    message := ERROR_internal_wall_detected
-                END                
+                    robotY :=  robotY - 1 ||
+                    visitedCells := visitedCells <- (robotX |-> robotY - 1) ||
+                    currentCell := (robotX |-> robotY - 1) ||
+                    message := OPERATION_SUCCESSFUL || movingDirection := south
+                ELSE
+                    IF
+                        isOutOfMaze(robotX, robotY - 1)
+                    THEN
+                        message:= ERROR_maze_wall_detected
+                    ELSE                
+                        message := ERROR_internal_wall_detected
+                    END                
+                END
             END
         END;
         
         // This operation is used to move the robot 1 cell west(i.e right)
         message <-- moveWest =
         BEGIN
-            IF
-                isEmptyMazeSquare(robotX - 1 , robotY)
+            IF isRobotOnExit(robotX, robotY)
             THEN
-                robotX :=  robotX - 1 ||
-                visitedCells := visitedCells <- (robotX - 1 , robotY) ||
-                currentCell := (robotX - 1 |-> robotY) ||
-                message := OPERATION_SUCCESSFUL || movingDirection := west
+                message:= FOUND_EXIT_prohibited_robot_movements
             ELSE
                 IF
-                    isOutOfMaze(robotX - 1 , robotY)
+                    isEmptyMazeSquare(robotX - 1 , robotY)
                 THEN
-                    message:= ERROR_maze_wall_detected
-                ELSE                
-                    message := ERROR_internal_wall_detected
-                END                
+                    robotX :=  robotX - 1 ||
+                    visitedCells := visitedCells <- (robotX - 1 , robotY) ||
+                    currentCell := (robotX - 1 |-> robotY) ||
+                    message := OPERATION_SUCCESSFUL || movingDirection := west
+                ELSE
+                    IF
+                        isOutOfMaze(robotX - 1 , robotY)
+                    THEN
+                        message:= ERROR_maze_wall_detected
+                    ELSE                
+                        message := ERROR_internal_wall_detected
+                    END                
+                END
             END
         END;
         
@@ -261,21 +245,26 @@ MACHINE
             newYPosition : mazeYSize
             
         THEN
-            IF
-                isEmptyMazeSquare(newXPosition, newYPosition)
+            IF isRobotOnExit(robotX, robotY)
             THEN
-                robotX := newXPosition ||
-                robotY := newYPosition ||
-                visitedCells := visitedCells <- (newXPosition |-> newYPosition) ||
-                currentCell := (newXPosition |-> newYPosition) ||
-                message := OPERATION_SUCCESSFUL
+                message:= FOUND_EXIT_prohibited_robot_movements
             ELSE
                 IF
-                    isOutOfMaze(newXPosition, newYPosition)
+                    isEmptyMazeSquare(newXPosition, newYPosition)
                 THEN
-                    message:= ERROR_attempt_to_move_out_of_maze
-                ELSE                
-                    message := ERROR_internal_wall_detected
+                    robotX := newXPosition ||
+                    robotY := newYPosition ||
+                    visitedCells := visitedCells <- (newXPosition |-> newYPosition) ||
+                    currentCell := (newXPosition |-> newYPosition) ||
+                    message := OPERATION_SUCCESSFUL
+                ELSE
+                    IF
+                        isOutOfMaze(newXPosition, newYPosition)
+                    THEN
+                        message:= ERROR_attempt_to_move_out_of_maze
+                    ELSE                
+                        message := ERROR_internal_wall_detected
+                    END
                 END
             END
         END;
@@ -287,7 +276,6 @@ MACHINE
             robotY :=  1 ||
             currentCell := (entranceSquare) || 
             visitedCells := [entranceSquare] || 
-            robotMovement := [] ||
             message := OPERATION_SUCCESSFUL || movingDirection := north
         END
             

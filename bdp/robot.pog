@@ -16,9 +16,136 @@
             </Binary_Exp>
         </Exp_Comparison>
     </Define>
-    <Define name="ctx" hash="0"/>
+    <Define name="ctx" hash="544456042">
+        <Exp_Comparison op="&lt;:">
+            <Id value="mazeXSize" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:1:1"/>
+            <Id value="NAT1" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:1:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="mazeXSize" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:2:1"/>
+            <Binary_Exp op=".." typref="0">
+                <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:2:2:1"/>
+                <Integer_Literal value="7" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:2:2:2"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="&lt;:">
+            <Id value="mazeYSize" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:3:1"/>
+            <Id value="NAT1" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:3:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="mazeYSize" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:4:1"/>
+            <Binary_Exp op=".." typref="0">
+                <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:4:2:1"/>
+                <Integer_Literal value="5" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:4:2:2"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="fullMaze" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:5:1"/>
+            <Binary_Exp op="*s" typref="2">
+                <Id value="mazeXSize" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:5:2:1"/>
+                <Id value="mazeYSize" typref="0" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:5:2:2"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="&lt;:">
+            <Id value="internalWalls" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:6:1"/>
+            <Id value="fullMaze" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:6:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="internalWalls" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:1"/>
+            <Nary_Exp op="{" typref="2">
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:1:1"/>
+                    <Integer_Literal value="3" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:1:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="2" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:2:1"/>
+                    <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:2:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="2" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:3:1"/>
+                    <Integer_Literal value="3" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:3:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="2" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:4:1"/>
+                    <Integer_Literal value="5" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:4:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="3" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:5:1"/>
+                    <Integer_Literal value="3" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:5:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="4" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:6:1"/>
+                    <Integer_Literal value="2" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:6:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="4" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:7:1"/>
+                    <Integer_Literal value="3" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:7:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="4" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:8:1"/>
+                    <Integer_Literal value="4" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:8:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="6" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:9:1"/>
+                    <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:9:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="6" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:10:1"/>
+                    <Integer_Literal value="2" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:10:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="6" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:11:1"/>
+                    <Integer_Literal value="4" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:11:2"/>
+                </Binary_Exp>
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Integer_Literal value="7" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:12:1"/>
+                    <Integer_Literal value="4" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:7:2:12:2"/>
+                </Binary_Exp>
+            </Nary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="&lt;:">
+            <Id value="emptyMazeSquares" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:8:1"/>
+            <Id value="fullMaze" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:8:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Binary_Exp op="/\" typref="2">
+                <Id value="emptyMazeSquares" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:9:1:1"/>
+                <Id value="internalWalls" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:9:1:2"/>
+            </Binary_Exp>
+            <EmptySet typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:9:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Binary_Exp op="\/" typref="2">
+                <Id value="emptyMazeSquares" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:10:1:1"/>
+                <Id value="internalWalls" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:10:1:2"/>
+            </Binary_Exp>
+            <Id value="fullMaze" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:10:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op=":">
+            <Id value="entranceSquare" typref="3" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:11:1"/>
+            <Id value="emptyMazeSquares" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:11:2"/>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="entranceSquare" typref="3" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:12:1"/>
+            <Binary_Exp op="|-&gt;" typref="3">
+                <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:12:2:1"/>
+                <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:12:2:2"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op="=">
+            <Id value="exitSquare" typref="3" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:13:1"/>
+            <Binary_Exp op="|-&gt;" typref="3">
+                <Integer_Literal value="1" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:13:2:1"/>
+                <Integer_Literal value="5" typref="1" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:13:2:2"/>
+            </Binary_Exp>
+        </Exp_Comparison>
+        <Exp_Comparison op=":">
+            <Id value="exitSquare" typref="3" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:14:1"/>
+            <Id value="emptyMazeSquares" typref="2" tag="C:/Users/Pasan/Documents/Personal/Final Year/Formal Methods/Coursework/Implementation/maze/bdp\/maze.bxml:1:2:1:14:2"/>
+        </Exp_Comparison>
+    </Define>
     <Define name="seext" hash="0"/>
-    <Define name="lprp" hash="2546022415">
+    <Define name="lprp" hash="2421443482">
         <Set>
             <Id value="DIRECTIONS" typref="0"/>
             <Enumerated_Values>
@@ -35,172 +162,47 @@
                 <Id value="ERROR_internal_wall_detected" typref="1"/>
                 <Id value="ERROR_maze_wall_detected" typref="1"/>
                 <Id value="ERROR_attempt_to_move_out_of_maze" typref="1"/>
+                <Id value="FOUND_EXIT_prohibited_robot_movements" typref="1"/>
                 <Id value="YES" typref="1"/>
                 <Id value="NO" typref="1"/>
             </Enumerated_Values>
         </Set>
-        <Exp_Comparison op="&lt;:">
-            <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:1"/>
-            <Id value="NAT1" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:1"/>
-            <Binary_Exp op=".." typref="0">
-                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:2:1"/>
-                <Integer_Literal value="7" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:2:2"/>
-            </Binary_Exp>
-        </Exp_Comparison>
-        <Exp_Comparison op="&lt;:">
-            <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:3:1"/>
-            <Id value="NAT1" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:3:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:1"/>
-            <Binary_Exp op=".." typref="0">
-                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:2:1"/>
-                <Integer_Literal value="5" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:2:2"/>
-            </Binary_Exp>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1"/>
-            <Binary_Exp op="*s" typref="2">
-                <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2:1"/>
-                <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2:2"/>
-            </Binary_Exp>
-        </Exp_Comparison>
-        <Exp_Comparison op="&lt;:">
-            <Id value="internalWalls" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1"/>
-            <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Id value="internalWalls" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:1"/>
-            <Nary_Exp op="{" typref="2">
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:1:1"/>
-                    <Integer_Literal value="3" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:1:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="2" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:2:1"/>
-                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:2:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="2" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:3:1"/>
-                    <Integer_Literal value="3" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:3:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="2" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:4:1"/>
-                    <Integer_Literal value="5" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:4:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="3" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:5:1"/>
-                    <Integer_Literal value="3" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:5:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="4" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:6:1"/>
-                    <Integer_Literal value="2" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:6:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="4" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:7:1"/>
-                    <Integer_Literal value="3" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:7:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="4" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:8:1"/>
-                    <Integer_Literal value="4" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:8:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="6" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:9:1"/>
-                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:9:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="6" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:10:1"/>
-                    <Integer_Literal value="2" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:10:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="6" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:11:1"/>
-                    <Integer_Literal value="4" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:11:2"/>
-                </Binary_Exp>
-                <Binary_Exp op="|-&gt;" typref="3">
-                    <Integer_Literal value="7" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:12:1"/>
-                    <Integer_Literal value="4" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:7:2:12:2"/>
-                </Binary_Exp>
-            </Nary_Exp>
-        </Exp_Comparison>
-        <Exp_Comparison op="&lt;:">
-            <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:8:1"/>
-            <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:8:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Binary_Exp op="/\" typref="2">
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:9:1:1"/>
-                <Id value="internalWalls" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:9:1:2"/>
-            </Binary_Exp>
-            <EmptySet typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:9:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Binary_Exp op="\/" typref="2">
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:10:1:1"/>
-                <Id value="internalWalls" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:10:1:2"/>
-            </Binary_Exp>
-            <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:10:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op=":">
-            <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:11:1"/>
-            <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:11:2"/>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:12:1"/>
-            <Binary_Exp op="|-&gt;" typref="3">
-                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:12:2:1"/>
-                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:12:2:2"/>
-            </Binary_Exp>
-        </Exp_Comparison>
-        <Exp_Comparison op="=">
-            <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:13:1"/>
-            <Binary_Exp op="|-&gt;" typref="3">
-                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:13:2:1"/>
-                <Integer_Literal value="5" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:13:2:2"/>
-            </Binary_Exp>
-        </Exp_Comparison>
-        <Exp_Comparison op=":">
-            <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:14:1"/>
-            <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:14:2"/>
-        </Exp_Comparison>
     </Define>
     <Define name="inprp" hash="0"/>
     <Define name="inext" hash="0"/>
     <Define name="inv" hash="2784357717">
         <Exp_Comparison op=":">
-            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:1"/>
-            <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:2"/>
+            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:1"/>
+            <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:2"/>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:1"/>
-            <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:2"/>
+            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:1"/>
+            <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:2"/>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="movingDirection" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:3:1"/>
-            <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:3:2"/>
+            <Id value="movingDirection" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:3:1"/>
+            <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:3:2"/>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="robotMovement" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:4:1"/>
+            <Id value="robotMovement" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:1"/>
             <Unary_Exp op="seq" typref="4">
-                <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:4:2:1"/>
+                <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:2:1"/>
             </Unary_Exp>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="currentCell" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1"/>
-            <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+            <Id value="currentCell" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1"/>
+            <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
         </Exp_Comparison>
         <Exp_Comparison op=":">
-            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1"/>
+            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1"/>
             <Unary_Exp op="seq" typref="6">
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
             </Unary_Exp>
         </Exp_Comparison>
     </Define>
     <Define name="ass" hash="0"/>
     <Define name="cst" hash="0"/>
-    <Define name="sets" hash="3228288158">
+    <Define name="sets" hash="2421443482">
         <Set>
             <Id value="DIRECTIONS" typref="0"/>
             <Enumerated_Values>
@@ -217,6 +219,7 @@
                 <Id value="ERROR_internal_wall_detected" typref="1"/>
                 <Id value="ERROR_maze_wall_detected" typref="1"/>
                 <Id value="ERROR_attempt_to_move_out_of_maze" typref="1"/>
+                <Id value="FOUND_EXIT_prohibited_robot_movements" typref="1"/>
                 <Id value="YES" typref="1"/>
                 <Id value="NO" typref="1"/>
             </Enumerated_Values>
@@ -235,8 +238,8 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:1:1:2:1"/>
-                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:2"/>
+                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:2:1"/>
+                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
@@ -244,8 +247,8 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:1:2:2:1"/>
-                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:2"/>
+                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:2:1"/>
+                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
@@ -253,9 +256,9 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <EmptySet typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:4:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:1:5:2:1"/>
+                    <EmptySet typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2:1"/>
                     <Unary_Exp op="seq" typref="4">
-                        <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:4:2:1"/>
+                        <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -264,8 +267,8 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:1:3:2:1"/>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+                    <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:3:2:1"/>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
@@ -273,17 +276,17 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Nary_Exp op="[" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1">
-                        <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:1:4:2:1:1"/>
+                    <Nary_Exp op="[" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1">
+                        <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:4:2:1:1"/>
                     </Nary_Exp>
                     <Unary_Exp op="seq" typref="6">
-                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="1450155707">
+    <Proof_Obligation goalHash="1999058168">
         <Tag>Operation_moveNorth</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -295,109 +298,132 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
-            <Exp_Comparison op=":">
+            <Exp_Comparison op="=">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:1"/>
-                    <Binary_Exp op="+i" typref="1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:2:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:2:2"/>
-                    </Binary_Exp>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:1:1"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:2"/>
+                <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Unary_Pred op="not">
-                <Exp_Comparison op=":">
+                <Exp_Comparison op="=">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:1"/>
-                        <Binary_Exp op="+i" typref="1">
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:2:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:2:2"/>
-                        </Binary_Exp>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:2"/>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
         <Local_Hyp num="3">
+            <Exp_Comparison op=":">
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:1"/>
+                    <Binary_Exp op="+i" typref="1">
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:2:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:2:2"/>
+                    </Binary_Exp>
+                </Binary_Exp>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="4">
             <Unary_Pred op="not">
                 <Exp_Comparison op=":">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:1:1"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:1"/>
                         <Binary_Exp op="+i" typref="1">
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:1:2:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:1:2:2"/>
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:2:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:2:2"/>
                         </Binary_Exp>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:2"/>
+                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
-        <Local_Hyp num="4">
+        <Local_Hyp num="5">
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:1:1"/>
+                        <Binary_Exp op="+i" typref="1">
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:1:2:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:1:2:2"/>
+                        </Binary_Exp>
+                    </Binary_Exp>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="6">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:1:1"/>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:1:1"/>
                     <Binary_Exp op="+i" typref="1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:1:2:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:1:2:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:1:2:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:1:2:2"/>
                     </Binary_Exp>
                 </Binary_Exp>
-                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:3:1:1:1:2"/>
+                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="+i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:1:2:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:1:2:1:2"/>
+                    <Binary_Exp op="+i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:1">
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:1:2:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:1:2:1:2"/>
                     </Binary_Exp>
-                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:2"/>
+                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:3:2:1:1"/>
+                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:3:2:1:1"/>
                         <Binary_Exp op="+i" typref="1">
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:3:2:1:2:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:3:2:1:2:2"/>
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:3:2:1:2:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:3:2:1:2:2"/>
                         </Binary_Exp>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1">
-                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:2:2:1:1"/>
+                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1">
+                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:2:2:1:1"/>
                         <Binary_Exp op="|-&gt;" typref="3">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:2:2:1:2:1"/>
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:2:2:1:2:1"/>
                             <Binary_Exp op="+i" typref="1">
-                                <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:2:2:1:2:2:1"/>
-                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:2:2:1:2:2:2"/>
+                                <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:2:2:1:2:2:1"/>
+                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:2:2:1:2:2:2"/>
                             </Binary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
                     <Unary_Exp op="seq" typref="6">
-                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="2661083815">
+    <Proof_Obligation goalHash="1737069584">
         <Tag>Operation_moveEast</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -409,109 +435,132 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
-            <Exp_Comparison op=":">
+            <Exp_Comparison op="=">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Binary_Exp op="+i" typref="1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:1:2"/>
-                    </Binary_Exp>
-                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:2"/>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:1:1"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:2"/>
+                <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Unary_Pred op="not">
-                <Exp_Comparison op=":">
+                <Exp_Comparison op="=">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Binary_Exp op="+i" typref="1">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:1:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:1:2"/>
-                        </Binary_Exp>
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:2"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:2"/>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
         <Local_Hyp num="3">
+            <Exp_Comparison op=":">
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Binary_Exp op="+i" typref="1">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:2"/>
+                </Binary_Exp>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="4">
             <Unary_Pred op="not">
                 <Exp_Comparison op=":">
                     <Binary_Exp op="|-&gt;" typref="3">
                         <Binary_Exp op="+i" typref="1">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:1:1:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:1:1:2"/>
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:1:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:1:2"/>
                         </Binary_Exp>
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:1:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:2"/>
+                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
-        <Local_Hyp num="4">
+        <Local_Hyp num="5">
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Binary_Exp op="+i" typref="1">
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:1:1:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:1:1:2"/>
+                        </Binary_Exp>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="6">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
                     <Binary_Exp op="+i" typref="1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:1:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:1:1:2"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:1:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:1:2"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:3:1:1:1:2"/>
+                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="+i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:1:2:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:1:2:1:2"/>
+                    <Binary_Exp op="+i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:1">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:1:2:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:1:2:1:2"/>
                     </Binary_Exp>
-                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:2"/>
+                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1">
+                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1">
                         <Binary_Exp op="+i" typref="1">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:3:2:1:1:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:3:2:1:1:2"/>
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:3:2:1:1:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:3:2:1:1:2"/>
                         </Binary_Exp>
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:3:2:1:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:3:2:1:2"/>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1">
-                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:2:2:1:1"/>
+                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1">
+                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:2:2:1:1"/>
                         <Binary_Exp op="|-&gt;" typref="3">
                             <Binary_Exp op="+i" typref="1">
-                                <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:2:2:1:2:1:1"/>
-                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:2:2:1:2:1:2"/>
+                                <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:2:2:1:2:1:1"/>
+                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:2:2:1:2:1:2"/>
                             </Binary_Exp>
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:2:2:1:2:2"/>
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:2:2:1:2:2"/>
                         </Binary_Exp>
                     </Binary_Exp>
                     <Unary_Exp op="seq" typref="6">
-                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="3008847492">
+    <Proof_Obligation goalHash="558943341">
         <Tag>Operation_moveSouth</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -523,109 +572,132 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
-            <Exp_Comparison op=":">
+            <Exp_Comparison op="=">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:1"/>
-                    <Binary_Exp op="-i" typref="1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:2:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:2:2"/>
-                    </Binary_Exp>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:1:1"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:2"/>
+                <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Unary_Pred op="not">
-                <Exp_Comparison op=":">
+                <Exp_Comparison op="=">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:1"/>
-                        <Binary_Exp op="-i" typref="1">
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:2:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:2:2"/>
-                        </Binary_Exp>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:2"/>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
         <Local_Hyp num="3">
+            <Exp_Comparison op=":">
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:1"/>
+                    <Binary_Exp op="-i" typref="1">
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:2:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:2:2"/>
+                    </Binary_Exp>
+                </Binary_Exp>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="4">
             <Unary_Pred op="not">
                 <Exp_Comparison op=":">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:1:1"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:1"/>
                         <Binary_Exp op="-i" typref="1">
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:1:2:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:1:2:2"/>
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:2:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:2:2"/>
                         </Binary_Exp>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:2"/>
+                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
-        <Local_Hyp num="4">
+        <Local_Hyp num="5">
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:1:1"/>
+                        <Binary_Exp op="-i" typref="1">
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:1:2:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:1:2:2"/>
+                        </Binary_Exp>
+                    </Binary_Exp>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="6">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:1:1"/>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:1:1"/>
                     <Binary_Exp op="-i" typref="1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:1:2:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:1:2:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:1:2:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:1:2:2"/>
                     </Binary_Exp>
                 </Binary_Exp>
-                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:3:1:1:1:2"/>
+                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="-i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:1:2:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:1:2:1:2"/>
+                    <Binary_Exp op="-i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:1">
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:1:2:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:1:2:1:2"/>
                     </Binary_Exp>
-                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:2"/>
+                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:3:2:1:1"/>
+                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:3:2:1:1"/>
                         <Binary_Exp op="-i" typref="1">
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:3:2:1:2:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:3:2:1:2:2"/>
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:3:2:1:2:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:3:2:1:2:2"/>
                         </Binary_Exp>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1">
-                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:2:2:1:1"/>
+                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1">
+                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:2:2:1:1"/>
                         <Binary_Exp op="|-&gt;" typref="3">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:2:2:1:2:1"/>
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:2:2:1:2:1"/>
                             <Binary_Exp op="-i" typref="1">
-                                <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:2:2:1:2:2:1"/>
-                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:2:2:1:2:2:2"/>
+                                <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:2:2:1:2:2:1"/>
+                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:2:2:1:2:2:2"/>
                             </Binary_Exp>
                         </Binary_Exp>
                     </Binary_Exp>
                     <Unary_Exp op="seq" typref="6">
-                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="1426152705">
+    <Proof_Obligation goalHash="699321069">
         <Tag>Operation_moveWest</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -637,109 +709,132 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
-            <Exp_Comparison op=":">
+            <Exp_Comparison op="=">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Binary_Exp op="-i" typref="1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:1:2"/>
-                    </Binary_Exp>
-                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:2"/>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:1:1"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:2"/>
+                <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Unary_Pred op="not">
-                <Exp_Comparison op=":">
+                <Exp_Comparison op="=">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Binary_Exp op="-i" typref="1">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:1:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:1:2"/>
-                        </Binary_Exp>
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:2"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:2"/>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
         <Local_Hyp num="3">
+            <Exp_Comparison op=":">
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Binary_Exp op="-i" typref="1">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:2"/>
+                </Binary_Exp>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="4">
             <Unary_Pred op="not">
                 <Exp_Comparison op=":">
                     <Binary_Exp op="|-&gt;" typref="3">
                         <Binary_Exp op="-i" typref="1">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:1:1:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:1:1:2"/>
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:1:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:1:2"/>
                         </Binary_Exp>
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:1:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:2"/>
+                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
-        <Local_Hyp num="4">
+        <Local_Hyp num="5">
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Binary_Exp op="-i" typref="1">
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:1:1:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:1:1:2"/>
+                        </Binary_Exp>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="6">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
                     <Binary_Exp op="-i" typref="1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:1:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:1:1:2"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:1:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:1:2"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:3:1:1:1:2"/>
+                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="-i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:1:2:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:1:2:1:2"/>
+                    <Binary_Exp op="-i" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:1">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:1:2:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:1:2:1:2"/>
                     </Binary_Exp>
-                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:2"/>
+                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1">
+                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1">
                         <Binary_Exp op="-i" typref="1">
-                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:3:2:1:1:1"/>
-                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:3:2:1:1:2"/>
+                            <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:3:2:1:1:1"/>
+                            <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:3:2:1:1:2"/>
                         </Binary_Exp>
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:3:2:1:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:3:2:1:2"/>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1">
-                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:2:2:1:1"/>
+                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1">
+                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:2:2:1:1"/>
                         <Binary_Exp op="|-&gt;" typref="3">
                             <Binary_Exp op="-i" typref="1">
-                                <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:2:2:1:2:1:1"/>
-                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:2:2:1:2:1:2"/>
+                                <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:2:2:1:2:1:1"/>
+                                <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:2:2:1:2:1:2"/>
                             </Binary_Exp>
-                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:2:2:1:2:2"/>
+                            <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:2:2:1:2:2"/>
                         </Binary_Exp>
                     </Binary_Exp>
                     <Unary_Exp op="seq" typref="6">
-                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="1818367602">
+    <Proof_Obligation goalHash="2401434801">
         <Tag>Operation_teleport</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -752,89 +847,111 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="message" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:1:1"/>
-                <Id value="REPORT" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:1:2"/>
+                <Id value="message" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:1:1"/>
+                <Id value="REPORT" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:2:1"/>
-                <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:2:2"/>
+                <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:2:1"/>
+                <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:3:1"/>
-                <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:3:2"/>
+                <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:3:1"/>
+                <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Local_Hyp num="1">
-            <Exp_Comparison op=":">
+            <Exp_Comparison op="=">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:1:1"/>
-                    <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:1:2"/>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:1:1"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:2"/>
+                <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Local_Hyp num="2">
             <Unary_Pred op="not">
-                <Exp_Comparison op=":">
+                <Exp_Comparison op="=">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:1:1"/>
-                        <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:1:2"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:2"/>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
         <Local_Hyp num="3">
+            <Exp_Comparison op=":">
+                <Binary_Exp op="|-&gt;" typref="3">
+                    <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:1:1"/>
+                    <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:1:2"/>
+                </Binary_Exp>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:2"/>
+            </Exp_Comparison>
+        </Local_Hyp>
+        <Local_Hyp num="4">
             <Unary_Pred op="not">
                 <Exp_Comparison op=":">
                     <Binary_Exp op="|-&gt;" typref="3">
-                        <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:3:1:1:1:1:1"/>
-                        <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:3:1:1:1:1:2"/>
+                        <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:1:1"/>
+                        <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:3:1:1:1:2"/>
+                    <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:2"/>
                 </Exp_Comparison>
             </Unary_Pred>
         </Local_Hyp>
-        <Local_Hyp num="4">
+        <Local_Hyp num="5">
+            <Unary_Pred op="not">
+                <Exp_Comparison op=":">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:3:1:1:1:1:1"/>
+                        <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:3:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:3:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="6">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:3:1:1:1:1:1"/>
-                    <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:3:1:1:1:1:2"/>
+                    <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:3:1:1:1:1:1"/>
+                    <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:3:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:3:1:1:1:2"/>
+                <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1">
-                        <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:2:1:4:2:1:1"/>
-                        <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:2:1:4:2:1:2"/>
+                    <Binary_Exp op="|-&gt;" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1">
+                        <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:2:1:4:2:1:1"/>
+                        <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:2:1:4:2:1:2"/>
                     </Binary_Exp>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
         <Simple_Goal>
             <Tag>Invariant is preserved</Tag>
-            <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
+            <Ref_Hyp num="3"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1">
-                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:2:1:3:2:1:1"/>
+                    <Binary_Exp op="&lt;-" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1">
+                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:2:1:3:2:1:1"/>
                         <Binary_Exp op="|-&gt;" typref="3">
-                            <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:2:1:3:2:1:2:1"/>
-                            <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:2:1:3:2:1:2:2"/>
+                            <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:2:1:3:2:1:2:1"/>
+                            <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:2:1:3:2:1:2:2"/>
                         </Binary_Exp>
                     </Binary_Exp>
                     <Unary_Exp op="seq" typref="6">
-                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -855,8 +972,8 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:10:2:1:1:2:1"/>
-                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:1:2"/>
+                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:10:2:1:1:2:1"/>
+                    <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:1:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
@@ -864,8 +981,8 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:10:2:1:2:2:1"/>
-                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:2:2"/>
+                    <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:10:2:1:2:2:1"/>
+                    <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:2:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
@@ -873,9 +990,9 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <EmptySet typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:4:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:10:2:1:5:2:1"/>
+                    <EmptySet typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:10:2:1:5:2:1"/>
                     <Unary_Exp op="seq" typref="4">
-                        <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:4:2:1"/>
+                        <Id value="DIRECTIONS" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:4:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -884,8 +1001,8 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:10:2:1:3:2:1"/>
-                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:5:2"/>
+                    <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:1,C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:10:2:1:3:2:1"/>
+                    <Id value="fullMaze" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:5:2"/>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
@@ -893,11 +1010,11 @@
             <Tag>Invariant is preserved</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Nary_Exp op="[" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:1">
-                        <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:10:2:1:4:2:1:1"/>
+                    <Nary_Exp op="[" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:1">
+                        <Id value="entranceSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:10:2:1:4:2:1:1"/>
                     </Nary_Exp>
                     <Unary_Exp op="seq" typref="6">
-                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:5:1:6:2:1"/>
+                        <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:4:1:6:2:1"/>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
@@ -916,30 +1033,30 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="visitedSquare" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:3:1:1:1"/>
-                <Id value="REPORT" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:3:1:1:2"/>
+                <Id value="visitedSquare" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:3:1:1:1"/>
+                <Id value="REPORT" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:3:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op="=">
-                <Id value="xPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:3:1:2:1"/>
-                <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:3:1:2:2"/>
+                <Id value="xPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:3:1:2:1"/>
+                <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:3:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op="=">
-                <Id value="yPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:3:1:3:1"/>
-                <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:3:1:3:2"/>
+                <Id value="yPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:3:1:3:1"/>
+                <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:3:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Simple_Goal>
             <Tag>Operation is well defined</Tag>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:4:1:1:1:2:1:1"/>
+                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:4:1:1:1:2:1:1"/>
                     <Unary_Exp op="seq" typref="6">
                         <Unary_Exp op="ran" typref="2">
-                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:4:1:1:1:2:1:1"/>
+                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:4:1:1:1:2:1:1"/>
                         </Unary_Exp>
                     </Unary_Exp>
                 </Exp_Comparison>
@@ -950,14 +1067,14 @@
             <Goal>
                 <Unary_Pred op="not">
                     <Exp_Comparison op="=">
-                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:3:4:1:1:1:2:1:1"/>
+                        <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:3:4:1:1:1:2:1:1"/>
                         <EmptySet typref="5"/>
                     </Exp_Comparison>
                 </Unary_Pred>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="3648547578">
+    <Proof_Obligation goalHash="495644595">
         <Tag>WellDefinedness_moveNorth</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -969,33 +1086,45 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="2">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:1"/>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:1"/>
                     <Binary_Exp op="+i" typref="1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:2:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:1:2:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:2:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:1:2:2"/>
                     </Binary_Exp>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:1:1:2"/>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Operation is well defined</Tag>
             <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:2:2:1:1"/>
+                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:2:2:1:1"/>
                     <Unary_Exp op="seq" typref="6">
                         <Unary_Exp op="ran" typref="2">
-                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:5:2:1:2:1:2:2:1:1"/>
+                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:5:2:1:3:1:2:1:2:2:1:1"/>
                         </Unary_Exp>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="2711078949">
+    <Proof_Obligation goalHash="3695421013">
         <Tag>WellDefinedness_moveEast</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1007,33 +1136,45 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="2">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
                     <Binary_Exp op="+i" typref="1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:1:2"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:1:2"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:1:1:2"/>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Operation is well defined</Tag>
             <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:2:2:1:1"/>
+                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:2:2:1:1"/>
                     <Unary_Exp op="seq" typref="6">
                         <Unary_Exp op="ran" typref="2">
-                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:6:2:1:2:1:2:2:1:1"/>
+                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:6:2:1:3:1:2:1:2:2:1:1"/>
                         </Unary_Exp>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="3625140040">
+    <Proof_Obligation goalHash="2077965561">
         <Tag>WellDefinedness_moveSouth</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1045,33 +1186,45 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="2">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:1"/>
+                    <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:1"/>
                     <Binary_Exp op="-i" typref="1">
-                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:2:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:1:2:2"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:2:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:1:2:2"/>
                     </Binary_Exp>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:1:1:2"/>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Operation is well defined</Tag>
             <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:2:2:1:1"/>
+                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:2:2:1:1"/>
                     <Unary_Exp op="seq" typref="6">
                         <Unary_Exp op="ran" typref="2">
-                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:7:2:1:2:1:2:2:1:1"/>
+                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:7:2:1:3:1:2:1:2:2:1:1"/>
                         </Unary_Exp>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="1371741031">
+    <Proof_Obligation goalHash="4040967330">
         <Tag>WellDefinedness_moveWest</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1083,33 +1236,45 @@
         <Definition name="inv"/>
         <Definition name="ass"/>
         <Local_Hyp num="1">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="2">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
                     <Binary_Exp op="-i" typref="1">
-                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:1:1"/>
-                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:1:2"/>
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:1:1"/>
+                        <Integer_Literal value="1" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:1:2"/>
                     </Binary_Exp>
-                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:1:2"/>
+                    <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:1:1:2"/>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Operation is well defined</Tag>
             <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:2:2:1:1"/>
+                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:2:2:1:1"/>
                     <Unary_Exp op="seq" typref="6">
                         <Unary_Exp op="ran" typref="2">
-                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:8:2:1:2:1:2:2:1:1"/>
+                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:8:2:1:3:1:2:1:2:2:1:1"/>
                         </Unary_Exp>
                     </Unary_Exp>
                 </Exp_Comparison>
             </Goal>
         </Simple_Goal>
     </Proof_Obligation>
-    <Proof_Obligation goalHash="1910826685">
+    <Proof_Obligation goalHash="53027444">
         <Tag>WellDefinedness_teleport</Tag>
         <Definition name="B definitions"/>
         <Definition name="ctx"/>
@@ -1122,40 +1287,52 @@
         <Definition name="ass"/>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="message" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:1:1"/>
-                <Id value="REPORT" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:1:2"/>
+                <Id value="message" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:1:1"/>
+                <Id value="REPORT" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:1:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:2:1"/>
-                <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:2:2"/>
+                <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:2:1"/>
+                <Id value="mazeXSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:2:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Hypothesis>
             <Exp_Comparison op=":">
-                <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:3:1"/>
-                <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:3:1:3:2"/>
+                <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:3:1"/>
+                <Id value="mazeYSize" typref="0" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:3:1:3:2"/>
             </Exp_Comparison>
         </Hypothesis>
         <Local_Hyp num="1">
+            <Unary_Pred op="not">
+                <Exp_Comparison op="=">
+                    <Binary_Exp op="|-&gt;" typref="3">
+                        <Id value="robotX" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:1:1"/>
+                        <Id value="robotY" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:1:2"/>
+                    </Binary_Exp>
+                    <Id value="exitSquare" typref="3" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:1:1:2"/>
+                </Exp_Comparison>
+            </Unary_Pred>
+        </Local_Hyp>
+        <Local_Hyp num="2">
             <Exp_Comparison op=":">
                 <Binary_Exp op="|-&gt;" typref="3">
-                    <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:1:1"/>
-                    <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:1:2"/>
+                    <Id value="newXPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:1:1"/>
+                    <Id value="newYPosition" typref="1" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:1:2"/>
                 </Binary_Exp>
-                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:1:1:2"/>
+                <Id value="emptyMazeSquares" typref="2" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:1:1:2"/>
             </Exp_Comparison>
         </Local_Hyp>
         <Simple_Goal>
             <Tag>Operation is well defined</Tag>
             <Ref_Hyp num="1"/>
+            <Ref_Hyp num="2"/>
             <Goal>
                 <Exp_Comparison op=":">
-                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:2:1:3:2:1:1"/>
+                    <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:2:1:3:2:1:1"/>
                     <Unary_Exp op="seq" typref="6">
                         <Unary_Exp op="ran" typref="2">
-                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:7:9:4:1:2:1:3:2:1:1"/>
+                            <Id value="visitedCells" typref="5" tag="C:\Users\Pasan\Documents\Personal\Final Year\Formal Methods\Coursework\Implementation\maze\bdp\robot.bxml:1:6:9:4:1:3:1:2:1:3:2:1:1"/>
                         </Unary_Exp>
                     </Unary_Exp>
                 </Exp_Comparison>
